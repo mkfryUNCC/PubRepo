@@ -29,8 +29,9 @@ def readMultilineFASTA(file):
 
 
 def main():
+    filepath = intput("enterPath")
 	d = {}
-	for name, seq in readMultilineFASTA("/Users/awhaley9/Downloads/Mdomestica_491_v1.1.cds_primaryTranscriptOnly.fa"):
+	for name, seq in readMultilineFASTA(filepath):
 	   	d[name] = seq
 	print(len(d.keys()))
 
